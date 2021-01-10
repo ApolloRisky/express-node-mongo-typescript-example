@@ -16,15 +16,36 @@
   "author": "quoccuong.nguyen265@hotmail.com",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
     "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "helmet": "^4.2.0",
+    "http-status": "^1.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "method-override": "^3.0.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.11.7",
     "morgan": "^1.10.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/cors": "^2.8.9",
     "@types/express": "^4.17.9",
+    "@types/lodash": "^4.14.165",
+    "@types/method-override": "^0.0.31",
+    "@types/module-alias": "^2.0.0",
+    "@types/mongoose": "^5.10.3",
+    "@types/morgan": "^1.9.2",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
+    "dotenv": "^8.2.0",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-config-standard": "^16.0.2",
@@ -36,6 +57,18 @@
     "lint-staged": "^10.5.3",
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1"
+  },
+  "_moduleAliases": {
+    "@utils": "src/utils",
+    "@config": "src/config",
+    "@models": "src/models",
+    "@routes": "src/routes",
+    "@interfaces": "src/interfaces",
+    "@controllers": "src/controllers",
+    "@middlewares": "src/middlewares",
+    "@initializers": "src/initializers",
+    "@serializers": "src/serializers",
+    "@validations": "src/validations"
   },
   "husky": {
     "hooks": {
